@@ -1,20 +1,7 @@
-题目：
+题目并不难，按照加法每一位对应进行计算即可。
 
-You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+需要注意两点：
+- 其中一个list比另一个长
+- 两个list加和最后的进位是1，需要多加一位。比如(9 -> 9) + (1) = (0 -> 0 -> 1)
 
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
-Output: 7 -> 0 -> 8
-
-答案：
-
-Keep track of the carry using a variable and simulate digits-by-digits sum from the head
-of list, which contains the least-significant digit.
-Take extra caution of the following cases:
-- When one list is longer than the other.
-- The sum could have an extra carry of one at the end, which is easy to forget. (e.g.,
-(9 -> 9) + (1) = (0 -> 0 -> 1))
-
-笔记：
-
-题目并不难，但是需要考虑的特殊情况比较多，上面答案中已经指出。
