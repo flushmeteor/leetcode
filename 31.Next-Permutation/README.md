@@ -21,7 +21,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
     1）从排列的右端开始，找出第一个比右边数字小的数字的序号j（j从左端开始计算），即 j=max{i|pi<pi+1}
 
-    2）在pj的右边的数字中，找出所有比pj大的数中最小的数字pk，即k=max{i|pi>pj}（右边的数从右至左是递增的，因此k是所有大于pj的数字中序号最大者）
+    2）在pj的右边的数字中，找出所有比pj大的数中最小的数字pk，即k=max{i|pi>pj}（右边的数从右至左是递增的，因此k是所有大于pj的数字中序号最大者）（如果有两个数的值相同，都符合条件的时候，需要取索引值大的那一个）
 
     3）对换pi，pk
 
